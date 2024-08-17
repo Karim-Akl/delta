@@ -1,6 +1,7 @@
 footer{
-  bottom: -50px;
+  /* bottom: -50px; */
   position: relative;
+  
 }
 .footer-class {
   display: flex;

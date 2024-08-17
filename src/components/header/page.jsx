@@ -12,6 +12,7 @@ const Page = () => {
         <div className=" flex navbur container">
           <div
             className="flex"
+
             style={{ justifyContent: "space-between", gap: "10rem" }}
           >
             <div className="img-class">
@@ -29,7 +30,7 @@ const Page = () => {
               </ul>
             </div>
           </div>
-          <div className="flex" style={{ gap: "2rem" }}>
+          <div className="flex">
             <Link href="/contact">
             <button className="contact-but">ابقى على تواصل</button>
             </Link>
