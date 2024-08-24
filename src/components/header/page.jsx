@@ -22,8 +22,12 @@ const Page = () => {
             </div>
             <div>
               <ul className="flex">
+                <Link href="/"> 
                 <li>الصفحة الرئيسية</li>
+                </Link>
+                <Link href="/our-services">
                 <li>خدماتنا</li>
+                </Link>
               <Link href="/contact">
                 <li>اتصل بنا</li>
                 </Link>

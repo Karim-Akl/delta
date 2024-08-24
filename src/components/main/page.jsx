@@ -14,7 +14,9 @@ const Page = () => {
         </p>
         </div>
         <div className="main-but">
+          <Link href="/our-services">
           <button>خدماتنا</button>
+          </Link>
           <Link href="/contact">
                 <button> تواصل معنا</button>
                 </Link>

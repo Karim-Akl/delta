@@ -1,12 +1,12 @@
 import React from "react";
-// import Footer from "../components/footer/footer.jsx";
-// import Header from "../components/header/header.jsx";
+import Footer from "../components/footer/page.jsx";
+import Header from "../components/header/page.jsx";
 
 const NotFound = () => {
   return (
     <div>
 
-      {/* <Header /> */}
+      <Header />
       <div 
             style={{
               height: "80vh",
@@ -19,7 +19,7 @@ const NotFound = () => {
         <h1>Sorry</h1>
         <p>we could not find the page you were looing for :)</p>
         </div>
-      {/* <Footer /> */}
+      <Footer />
       </div>
   );
 };
