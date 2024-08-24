@@ -1,11 +1,12 @@
 "use client";
+
 import React from "react";
+import { useRouter } from 'next/router';
 import Contact from "../../components/contact/page";
 import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
 import "../../components/hero/hero.css";
-import "./ourservices.css";
-import { useRouter } from 'next/router';
+import "./rent-countries.css";
 
 const Page = () => {
   const router = useRouter();
