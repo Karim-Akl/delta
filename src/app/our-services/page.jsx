@@ -1,11 +1,10 @@
 "use client";
 import React from "react";
-
 import Contact from "../../components/contact/page"
 import Header from "../../components/header/page"
 import "../../components/hero/hero.css"
-import Footer from "../../components/footer/page"
 import "./ourservices.css";
+import Footer from "../../components/footer/page"
 const Page = () => {
   return (
     <section className="sec-serv">
