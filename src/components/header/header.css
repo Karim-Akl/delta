@@ -190,3 +190,37 @@ header ul.modal li:hover {
   color: var(--NavyBlue);
   box-shadow: 1px -1111px 100px var(--black);
 }
+
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  list-style: none;
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+}
+
+.modal li {
+  margin: 0.5rem 0;
+}
+
+.icon-x {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
