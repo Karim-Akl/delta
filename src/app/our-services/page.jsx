@@ -4,7 +4,7 @@ import Contact from "../../components/contact/page";
 import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
 import "../../components/hero/hero.css";
-import "./ourservices.css";
+import "./style.css";
 
 
 const Page = () => {

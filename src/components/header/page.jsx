@@ -43,10 +43,7 @@ const Header = () => {
             </svg>
           </button>
         </div>
-      </div>
-
-      {/* Modal */}
-      {showModal && (
+        {showModal && (
         <div className="fixed">
           <ul className="modal">
             <li>
@@ -57,7 +54,12 @@ const Header = () => {
             <li><Link href="/contact">اتصل بنا</Link></li>
           </ul>
         </div>
-      )}
+      )} 
+
+
+      </div    > 
+
+
     </header>
   );
 };
