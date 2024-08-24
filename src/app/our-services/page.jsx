@@ -5,6 +5,7 @@ import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
 import "../../components/hero/hero.css";
 import "./style.css";
+import "../rent-countries/rent-countries.css"
 
 
 const Page = () => {

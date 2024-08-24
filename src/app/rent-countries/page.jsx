@@ -1,18 +1,16 @@
-"use client";
-
 import React from "react";
-import { useRouter } from 'next/router';
+import Link from "next/link";
 import Contact from "../../components/contact/page";
 import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
+import Image from "next/image";
 import "../../components/hero/hero.css";
 import "./rent-countries.css";
 
 const Page = () => {
-  const router = useRouter();
-
   const handleContactClick = () => {
-    router.push('/contact');
+    console.log("Contact button clicked");
+    // Add your desired behavior here
   };
 
   return (
@@ -31,13 +29,15 @@ const Page = () => {
             متناول الجميع. شفافية الأسعار: وضوح وتفصيل الأسعار بدون أي رسوم خفية،
             مما يعزز من ثقة العملاء. سلامة وأمان
           </p>
-          <button onClick={handleContactClick}>توصل معنا</button>
+          <button><Link href="/our-services"></Link>توصل معنا</button>
         </div>
         <div className="imga" style={{ width: "30%" }}>
-          <img
+          <Image
             src="/image/pexels-tima-miroshnichenko-6200780.jpg"
             alt="عروض مغرية"
             width={200}
+            height={200}
+            priority
           />
         </div>
       </div>
@@ -50,22 +50,25 @@ const Page = () => {
             {[
               {
                 title: "إيجار العاملات",
-                description: "تقديم خدمات إيجار العمالة المنزلية مع مرونة في العقود والأسعار التنافسية تأمين العمالة المنزلية من البلدان المصرح بها، مع ضمان التزامهم بأعلى معايير الجودة",
+                description:
+                  "تقديم خدمات إيجار العمالة المنزلية مع مرونة في العقود والأسعار التنافسية تأمين العمالة المنزلية من البلدان المصرح بها، مع ضمان التزامهم بأعلى معايير الجودة",
                 imgSrc: "/image/0821202411020566c5c92d7be51.gif",
-                altText: "إيجار العاملات"
+                altText: "إيجار العاملات",
               },
               {
                 title: "تنظيف شامل",
-                description: "تنظيف المنازل والمكاتب بأساليب احترافية لضمان بيئة نظيفة وصحية",
+                description:
+                  "تنظيف المنازل والمكاتب بأساليب احترافية لضمان بيئة نظيفة وصحية",
                 imgSrc: "/image/0821202411031766c5c975cc7b2.gif",
-                altText: "تنظيف شامل"
+                altText: "تنظيف شامل",
               },
               {
                 title: "رعاية منزلية",
-                description: "توفير الرعاية للمسنين والأطفال بأعلى مستوى من الاهتمام والعناية. نهدف إلى جعل حياتكم أسهل وأكثر راحة من خلال خدماتنا المتكاملة والمخصصة لتلبية جميع احتياجاتكم المنزلية.",
+                description:
+                  "توفير الرعاية للمسنين والأطفال بأعلى مستوى من الاهتمام والعناية. نهدف إلى جعل حياتكم أسهل وأكثر راحة من خلال خدماتنا المتكاملة والمخصصة لتلبية جميع احتياجاتكم المنزلية.",
                 imgSrc: "/image/0821202411045566c5c9d744f0e.gif",
-                altText: "رعاية منزلية"
-              }
+                altText: "رعاية منزلية",
+              },
             ].map(({ title, description, imgSrc, altText }, index) => (
               <div key={index} className="l1-class-bg">
                 <div className="service-text">
@@ -73,7 +76,13 @@ const Page = () => {
                   <p>{description}</p>
                 </div>
                 <div className="service-image">
-                  <img src={imgSrc} alt={altText} width={250} />
+                  <Image
+                    src={imgSrc}
+                    alt={altText}
+                    width={250}
+                    height={250}
+                    priority
+                  />
                 </div>
               </div>
             ))}
