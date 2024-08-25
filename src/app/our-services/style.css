@@ -1,6 +1,5 @@
 section.sec-serv {
   width: 100%;
-  height: 100vh;
 }
 .backServices{
   background-image:url(../../../public/image/pexels-tima-miroshnichenko-6195288.jpg) ;
@@ -31,4 +30,5 @@ section.sec-serv {
 }
 section.sec-serv .class-bg{
   margin: auto !important;
+  padding: 30px !important;
 }

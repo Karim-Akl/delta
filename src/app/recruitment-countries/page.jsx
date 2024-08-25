@@ -35,7 +35,7 @@ const Page = () => {
     <section>
       <Header />
       <CountryList
-        title="دول الايجار"
+        title="دول الاستقدام"
         description="تعرف علي كافه التفاصيل"
         countries={countriesData2}
       />

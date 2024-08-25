@@ -15,10 +15,13 @@ const Page = () => {
   return (
     <section className="sec-serv">
       <Header />
+      <div>
       <div className="backServices">
         <h3>شركة دلتا النسيم</h3>
         <p>خدمات معتمدة</p>
       </div>
+      </div>
+  
 
       <div className="flex line-3-bg">
         <div className="imga" style={{ width: "50%" }}>

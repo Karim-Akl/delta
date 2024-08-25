@@ -35,7 +35,10 @@
 @media (max-width: 1268px)  {
   .bg-img{
     width: 60rem;
-  
+  }
+  .img-caom{
+    width: 100%;
+    margin: auto;
   }
 }
 @media (max-width: 1068px)  {

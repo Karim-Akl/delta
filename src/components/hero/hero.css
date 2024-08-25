@@ -230,6 +230,7 @@ section .l1-class-bg{
 }
 .box h2 ,.box p{
   color: rgb(245, 180, 76);
+  font-size: xx-large;
 }
 .box button{
   padding: 10px 20px 10px 20px;
