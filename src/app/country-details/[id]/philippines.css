@@ -66,6 +66,7 @@
   .sss{
     flex-direction: column;
     width: 100%;
+    margin-block: 60px !important;
 
   }
   .img-class-bg img{
