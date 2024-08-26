@@ -21,7 +21,6 @@ const CountryDetails = ({ params }) => {
           <div className='text-bac'>
             <h2>{country.name}</h2>
             <p>{country.description}</p>
-            <p>جميع الأسعار بالريال السعودي</p>
           </div>
           <div>
             <img src={country.image} alt={country.name} />
@@ -30,16 +29,12 @@ const CountryDetails = ({ params }) => {
         <div className='flex sss' style={{ gap: "2rem", width: "80%", margin: "auto" }}>
           <div className='img-class-bg'>
             <div>
-              <img src="/image/0812202414421966ba1f4bc88ab (1).svg" alt="" />
             </div>
-            <span>100</span>
+            <span>{country.cost}</span>
+            <p>جميع الأسعار بالريال السعودي</p>
+
           </div>
-          <div className='img-class-bg'>
-            <div>
-              <img src="/image/0812202414422066ba1f4ce9dc4.svg" alt="" />
-            </div>
-            <span>300</span>
-          </div>
+
         </div>
       </div>
       <Footer />

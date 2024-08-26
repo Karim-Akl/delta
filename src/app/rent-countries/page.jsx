@@ -3,7 +3,6 @@ import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
 import './rent-countries.css';
 import countriesData from '../../data/countries.json';
-import countriesData2 from '../../data/countries-2.json';
 import Link from "next/link";
 
 const CountryList = ({ title, description, countries }) => (
@@ -37,7 +36,7 @@ const Page = () => {
       <CountryList
         title="دول الايجار"
         description="تعرف علي كافه التفاصيل"
-        countries={countriesData2}
+        countries={countriesData}
       />
       <Footer />
     </section>

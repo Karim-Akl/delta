@@ -10,13 +10,14 @@ const Hero = () => {
   // Increment the count for recruitment countries from 0 to 20
   useEffect(() => {
     const startCount = 0;
-    const endCountRecruitment = 20;
-    const endCountRental = 8;
+    const endCountRecruitment = 5;
+    const endCountRental = 4;
     const duration = 3000;
 
-    const incrementTimeRecruitment = duration / (endCountRecruitment - startCount);
+    const incrementTimeRecruitment =
+      duration / (endCountRecruitment - startCount);
     const incrementTimeRental = duration / (endCountRental - startCount);
-  
+
     const incrementRecruitmentCount = () => {
       setRecruitmentCount((prevCount) => {
         if (prevCount < endCountRecruitment) {
@@ -38,10 +39,9 @@ const Hero = () => {
         }
       });
     };
-  
+
     incrementRecruitmentCount();
     incrementRentalCount();
-  
   }, []);
 
   // Render a box with a dynamic count and title
@@ -49,7 +49,9 @@ const Hero = () => {
     <div className="box">
       <h2>{count}</h2>
       <p>{title}</p>
-      <button><Link href={link}>المزيد</Link></button>
+      <button>
+        <Link href={link}>المزيد</Link>
+      </button>
     </div>
   );
 
@@ -84,7 +86,15 @@ const Hero = () => {
         <div className="flex l3-hero">
           <div className="l1-hero">
             <div>
-              <img src="/image/l1.svg" alt="Vision" style={{ background: "#092143", padding: "20px", borderRadius: "61px" }} />
+              <img
+                src="/image/l1.svg"
+                alt="Vision"
+                style={{
+                  background: "#092143",
+                  padding: "20px",
+                  borderRadius: "61px",
+                }}
+              />
             </div>
             <h2>رؤيتنا</h2>
             <p>
@@ -97,7 +107,15 @@ const Hero = () => {
 
           <div className="l1-hero">
             <div>
-              <img src="/image/l2.svg" alt="Mission" style={{ background: "#092143", padding: "20px", borderRadius: "61px" }} />
+              <img
+                src="/image/l2.svg"
+                alt="Mission"
+                style={{
+                  background: "#092143",
+                  padding: "20px",
+                  borderRadius: "61px",
+                }}
+              />
             </div>
             <h2>مهمتنا</h2>
             <p>
@@ -110,7 +128,15 @@ const Hero = () => {
 
           <div className="l1-hero">
             <div>
-              <img src="/image/l3.svg" alt="Professionalism" style={{ background: "#092143", padding: "20px", borderRadius: "61px" }} />
+              <img
+                src="/image/l3.svg"
+                alt="Professionalism"
+                style={{
+                  background: "#092143",
+                  padding: "20px",
+                  borderRadius: "61px",
+                }}
+              />
             </div>
             <h2>احترافية الأداء</h2>
             <p>
@@ -126,35 +152,64 @@ const Hero = () => {
 
       <div className="class-bg">
         <div style={{ width: "80%", margin: "auto", gap: "0px" }}>
-          <div style={{ width: "100%", marginTop: "5rem", justifyContent: "center", color: "white" }}>
+          <div
+            style={{
+              width: "100%",
+              marginTop: "5rem",
+              justifyContent: "center",
+              color: "white",
+            }}
+          >
             <h2>خدماتنا</h2>
             <p>خبراء في مجالنا، لذلك يمكننا توفير خدمات مميزة لك</p>
           </div>
           <div className="flex">
-            <div className="l1-class-bg" style={{ height: "25rem", gap: "1rem" }}>
+            <div
+              className="l1-class-bg"
+              style={{ height: "25rem", gap: "1rem" }}
+            >
               <p>
                 تقديم خدمات إيجار العمالة المنزلية مع مرونة في العقود والأسعار
-                التنافسية. تأمين العمالة المنزلية من البلدان المصرح بها، مع
-                ضمان التزامهم بأعلى معايير الجودة.
+                التنافسية. تأمين العمالة المنزلية من البلدان المصرح بها، مع ضمان
+                التزامهم بأعلى معايير الجودة.
               </p>
               <h2>إيجار العاملات</h2>
-              <img src="/image/0821202411045566c5c9d744f0e.gif" alt="Worker rental" width={250} />
+              <img
+                src="/image/0821202411045566c5c9d744f0e.gif"
+                alt="Worker rental"
+                width={250}
+              />
             </div>
 
-            <div className="l1-class-bg" style={{ height: "25rem", gap: "1rem" }}>
-              <p>تنظيف المنازل والمكاتب بأساليب احترافية لضمان بيئة نظيفة وصحية والمخصصة لتلبية جميع احتياجاتكم المنزلية.</p>
-              <h2>تنظيف شامل</h2>
-              <img src="/image/0821202411031766c5c975cc7b2.gif" alt="Comprehensive cleaning" width={250} />
-            </div>
-
-            <div className="l1-class-bg" style={{ height: "25rem", gap: "1rem" }}>
+            <div
+              className="l1-class-bg"
+              style={{ height: "25rem", gap: "1rem" }}
+            >
               <p>
-                توفير الرعاية للمسنين والأطفال بأعلى مستوى من الاهتمام والعناية.
-                نهدف إلى جعل حياتكم أسهل وأكثر راحة من خلال خدماتنا المتكاملة
+                تنظيف المنازل والمكاتب بأساليب احترافية لضمان بيئة نظيفة وصحية
                 والمخصصة لتلبية جميع احتياجاتكم المنزلية.
               </p>
-              <h2>رعاية منزلية</h2>
-              <img src="/image/0821202411020566c5c92d7be51.gif" alt="Home care" width={250} />
+              <h2>تنظيف شامل</h2>
+              <img
+                src="/image/0821202411031766c5c975cc7b2.gif"
+                alt="Comprehensive cleaning"
+                width={250}
+              />
+            </div>
+
+            <div
+              className="l1-class-bg"
+              style={{ height: "25rem", gap: "1rem" }}
+            >
+              <p>
+              نقوم بتوفير الكوادر العاملة والعاملات من جميع الدول المتاحة ويشمل جميع التخصصات المطلوبة في سوق العمل بحيث تكون كوادر متميزة ومدربة للعمل بكفاءة
+              </p>
+              <h2> استقدام العاملات</h2>
+              <img
+                src="/image/0821202411020566c5c92d7be51.gif"
+                alt="Home care"
+                width={250}
+              />
             </div>
           </div>
         </div>
@@ -173,7 +228,12 @@ const Hero = () => {
           </Link>
         </div>
         <div style={{ width: "30%" }} className="imga">
-          <img src="/image/pexels-tima-miroshnichenko-6200780.jpg" alt="Offers" width={200} />
+          <img
+            src="/image/WhatsApp Image 2024-08-25 at 19.57.59.jpeg"
+            alt="Offers"
+            width={200}
+            className="imga"
+          />
         </div>
       </div>
 
@@ -183,7 +243,7 @@ const Hero = () => {
         </div>
         <div>
           <p>
-            نسعى في شركة أيادي النهار لأن نكون الشريك الاستراتيجي المفضل لتوفير
+            نسعى في شركة دلتا النسيم لأن نكون الشريك الاستراتيجي المفضل لتوفير
             الكوادر البشرية ذات الكفاءة العالية في المملكة العربية السعودية.
           </p>
           <h3>تحقيق التميز</h3>

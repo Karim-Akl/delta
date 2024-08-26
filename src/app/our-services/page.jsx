@@ -35,7 +35,7 @@ const Page = () => {
         </div>
         <div className="imga" style={{ width: "30%" }}>
           <img
-            src="/image/pexels-tima-miroshnichenko-6200780.jpg"
+            src="/image/WhatsApp Image 2024-08-25 at 19.58.00.jpeg"
             alt="عروض مغرية"
             width={200}
           />

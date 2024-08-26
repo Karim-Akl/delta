@@ -1,12 +1,13 @@
 main{
-  background-image: url(../../../public/image/Back-ground.jpg);
+  background-image:url(../../../public/image/0812202414323066ba1cfe446f7.jpeg) ;
   width: 100%;
   height: 60rem;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center;
+  background-position:right;
   background-attachment: fixed;
+  object-fit: cover;
 }
 main .flex{
   flex-direction: column;
@@ -44,6 +45,7 @@ main .main-but button:hover{
   color: var(--White);
   border: 1px solid var(--White);
 }
-main h1{
+main h1,main p{
   font-weight: bolder;
+  color: black;
 }
