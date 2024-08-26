@@ -105,8 +105,7 @@ const Page = () => {
               href=""
               style={{
                 flexDirection: "row-reverse",
-                display: "flex",
-                gap: "1rem",
+                display: "flex"
               }}
             >
 
@@ -117,8 +116,7 @@ const Page = () => {
               href="https://api.whatsapp.com/send/?phone=%2B201060310135&text&type=phone_number&app_absent=0"
               style={{
                 flexDirection: "row-reverse",
-                display: "flex",
-                gap: "1rem",
+                display: "flex"
               }}
             >
               <pre> 

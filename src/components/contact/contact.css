@@ -181,7 +181,7 @@
 }
 .number-contact{
   display: flex;
-  gap: 5rem;
+  gap: 1rem;
 }
 .bg-class-contact h2{
   font-size: xx-large;
