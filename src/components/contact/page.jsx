@@ -107,7 +107,7 @@ const Page = () => {
               }}
             >
 
-              <pre>  162827220 ( 996 +)</pre>
+              <pre>  162827220 ( 966 +)</pre>
               <span className="icon-phone"></span>
             </a>
             <a
@@ -119,7 +119,7 @@ const Page = () => {
               }}
             >
               <pre> 
-              920005826 ( 996 +)
+              920005826 ( 966 +)
                </pre>
               <span className="icon-whatsapp"></span>
             </a>
