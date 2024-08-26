@@ -1,5 +1,5 @@
 main{
-  background-image:url(../../../public/image/hand-drawn-cleaning-service-template-design_23-2150884878.jpg);
+  background-image:url(../../../public/image/0812202414323066ba1cfe446f7.jpeg);
   width: 100%;
   height: 60rem;
   position: relative;
@@ -11,16 +11,18 @@ main{
 }
 main .flex{
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   text-align: center;
-  align-content: center;
+  align-content: space-evenly;
   margin: auto;
-  width: 80%;
+  width: 100%;
   height: 100%;
   color: var(--White);
   gap: 2rem;
   line-height: 30px;
+  padding-block: 200px;
+
 }
 .text-main{
   display: flex;
@@ -28,10 +30,15 @@ main .flex{
   justify-content: center;
   align-items: center;
   gap: 2rem;
+  padding-inline: 20px;
+  align-items: flex-start;
+  width: 31%;
 }
 main .main-but{
     display: flex;
     gap: 2rem;
+    padding-inline: 20px;
+    
 }
 main .main-but button{
   background-color: var(--NavyBlue);
@@ -39,6 +46,7 @@ main .main-but button{
   width: 5rem;
   height: 2rem;
   border-radius: 10px;
+  padding-inline: 20px;
 }
 main .main-but button:hover{
   background-color: var(--black);
@@ -47,5 +55,46 @@ main .main-but button:hover{
 }
 main h1,main p{
   font-weight: bolder;
-  color: black;
+  color: rgb(0, 0, 0);
+  text-align: right;
+}
+
+@media (max-width: 968px) {
+  .text-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 20px;
+    align-items: flex-start;
+    width: 40%;
+  }
+  main .flex {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    text-align: center;
+    align-content: space-evenly;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    color: var(--White);
+    gap: 2rem;
+    line-height: 30px;
+    padding-block: 400px;
+}
+}
+
+@media (max-width: 768px) {
+  .text-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-inline: 20px;
+    align-items: flex-start;
+    width: 60%;
+  }
 }
