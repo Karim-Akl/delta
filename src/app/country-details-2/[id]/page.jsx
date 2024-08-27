@@ -1,24 +1,25 @@
 import Header from "../../../components/header/page";
 import Footer from "../../../components/footer/page";
-import countryDetails from '../../../data/countries-2.json'; // تأكد من المسار الصحيح للملف
-import "./philippines.css"
-import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon"
+import countryDetails from '../../../data/countries-2.json';
+import "./philippines.css";
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon";
+import { notFound } from 'next/navigation';
 
 const CountryDetails = ({ params }) => {
   const { id } = params;
 
-  // العثور على تفاصيل الدولة من البيانات
+  // Find the country details by ID
   const country = countryDetails.find(c => c.id === parseInt(id));
 
   if (!country) {
-    // إذا لم يتم العثور على تفاصيل الدولة، يمكنك استخدام `notFound` من next/navigation
+    // If no country is found, return a 404 page
     notFound();
   }
 
   return (
     <section style={{ height: "100vh" }} className="section">
       <Header />
-      <WhatsappIcon/>
+      <WhatsappIcon />
 
       <div className='flex' style={{ gap: "2rem", flexDirection: "column" }}>
         <div className='bac'>
@@ -35,10 +36,9 @@ const CountryDetails = ({ params }) => {
             <div>
             </div>
             <span>{country.cost}</span>
-            <span>{country.btu} </span>
+            <span>{country.btu}</span>
             <a href={country.link} className="btn-link">{country.btu1}</a>
           </div>
-
         </div>
       </div>
       <Footer />
@@ -46,7 +46,7 @@ const CountryDetails = ({ params }) => {
   );
 }
 
-// هذه الدالة يتم استخدامها للحصول على المعلمات من URL
+// This function is used to generate the metadata for the page
 export async function generateMetadata({ params }) {
   const { id } = params;
   const country = countryDetails.find(c => c.id === parseInt(id));
@@ -59,6 +59,13 @@ export async function generateMetadata({ params }) {
     title: country.name,
     description: country.description,
   };
+}
+
+// Generate static paths for all country details
+export async function generateStaticParams() {
+  return countryDetails.map((country) => ({
+    id: country.id.toString(),
+  }));
 }
 
 export default CountryDetails;

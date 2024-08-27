@@ -1,9 +1,10 @@
 import Header from "../../../components/header/page";
 import Footer from "../../../components/footer/page";
 import countryDetails from '../../../data/countries.json'; // تأكد من المسار الصحيح للملف
-import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon"
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon";
+import "./philippines.css";
+import { notFound } from 'next/navigation'; // Import notFound for handling errors
 
-import "./philippines.css"
 const CountryDetails = ({ params }) => {
   const { id } = params;
 
@@ -18,7 +19,7 @@ const CountryDetails = ({ params }) => {
   return (
     <section style={{ height: "100vh" }}>
       <Header />
-      <WhatsappIcon/>
+      <WhatsappIcon />
 
       <div className='flex' style={{ gap: "2rem", flexDirection: "column" }}>
         <div className='bac'>
@@ -36,14 +37,19 @@ const CountryDetails = ({ params }) => {
             </div>
             <span>{country.cost}</span>
             <p>جميع الأسعار بالريال السعودي</p>
-
           </div>
-
         </div>
       </div>
       <Footer />
     </section>
   );
+}
+
+// Generate static paths for all country details
+export async function generateStaticParams() {
+  return countryDetails.map((country) => ({
+    id: country.id.toString(),
+  }));
 }
 
 // هذه الدالة يتم استخدامها للحصول على المعلمات من URL
