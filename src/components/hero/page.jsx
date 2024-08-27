@@ -11,7 +11,7 @@ const Hero = () => {
   useEffect(() => {
     const startCount = 0;
     const endCountRecruitment = 5;
-    const endCountRental = 4;
+    const endCountRental = 5;
     const duration = 3000;
 
     const incrementTimeRecruitment =
@@ -264,7 +264,7 @@ const Hero = () => {
       </div>
 
       <div className="flex bg-box">
-        {renderBox(recruitmentCount, "دول الاستقدام", "/recruitment-countries")}
+        {renderBox(recruitmentCount, " دول الإستقدام", "/recruitment-countries")}
         {renderBox(rentalCount, "دول الايجار", "/rent-countries")}
       </div>
     </section>
