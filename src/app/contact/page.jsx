@@ -2,6 +2,8 @@
 import React from "react";
 import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon"
+
 import { useForm, ValidationError } from "@formspree/react";
 import "./contact.css";
 import "../../../public/style.css"
@@ -12,6 +14,8 @@ const Page = () => {
   return (
     <section className="contact-us">
       <Header/>
+      <WhatsappIcon/>
+
     <div className="bg-contact">
       <div className="bg-2">
         <div className="form-container">

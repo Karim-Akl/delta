@@ -3,6 +3,10 @@ import React from "react";
 import Contact from "../../components/contact/page";
 import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
+import Main from "../../components/main/page";
+
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon"
+
 import "../../components/hero/hero.css";
 import "./style.css";
 
@@ -15,13 +19,9 @@ const Page = () => {
   return (
     <section className="sec-serv">
       <Header />
-      <div>
-      <div className="backServices">
-        <h3>شركة دلتا النسيم</h3>
-        <p>خدمات معتمدة</p>
-      </div>
-      </div>
-  
+      <Main/>
+      <WhatsappIcon/>
+
 
       <div className="flex line-3-bg">
         <div className="imga" style={{ width: "50%" }}>

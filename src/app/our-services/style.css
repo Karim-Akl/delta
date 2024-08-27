@@ -36,3 +36,48 @@ section.sec-serv .class-bg{
 .imga{
   border-radius: 20px !important;
 }
+
+.sec-serv .main-class{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  left: 0px;
+  right: 0px;
+  top: 100% !important;
+  font-size: xx-large;
+  color: var(--badyBG) !important;
+  gap: 12px;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 42px;
+  line-height: 26px;
+  width: auto;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 890px) {
+
+  .sec-serv .main-class{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    left: 0px;
+    right: 0px;
+    top: 25% !important;
+    font-size: xx-large;
+    color: var(--badyBG) !important;
+    gap: 12px;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 42px;
+    line-height: 26px;
+    width: auto;
+    /* transform: translateY(50%); */
+  }
+  
+}

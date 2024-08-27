@@ -3,11 +3,15 @@ import React from 'react';
 import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
 import './rent-countries.css';
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon"
+
 import countriesData2 from '../../data/countries-2.json';
 import Link from "next/link";
 
 const CountryList = ({ title, description, countries }) => (
   <>
+      <WhatsappIcon/>
+
     <div className='bg-count'>
       <div className='count-class'>
         <h2>{title}</h2>

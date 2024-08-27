@@ -4,6 +4,7 @@ import Contact from "../../components/contact/page";
 import Header from "../../components/header/page";
 import Footer from "../../components/footer/page";
 import "../../components/hero/hero.css";
+import Main from "../../components/main/page";
 import "./style.css";
 import { useRouter } from 'next/router';
 
@@ -17,11 +18,7 @@ const Page = () => {
   return (
     <section className="sec-serv">
       <Header />
-      <div className="backServices">
-        <h3>شركة دلتا النسيم</h3>
-        <p>خدمات معتمدة</p>
-      </div>
-
+      <Main/>
       <div className="flex line-3-bg">
         <div className="imga" style={{ width: "50%" }}>
           <h2>نحن نقدم عروض مغرية</h2>

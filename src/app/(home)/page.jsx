@@ -4,6 +4,7 @@ import Main from "../../components/main/page"
 import Hero from "../../components/hero/page"
 import Contact from "../../components/contact/page"
 import Campany from "../../components/caompany/page"
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon"
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Campany/>
       <Contact/>
       <Footer/>
+      <WhatsappIcon/>
     </div>
   );
 }

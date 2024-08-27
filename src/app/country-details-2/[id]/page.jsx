@@ -2,6 +2,8 @@ import Header from "../../../components/header/page";
 import Footer from "../../../components/footer/page";
 import countryDetails from '../../../data/countries-2.json'; // تأكد من المسار الصحيح للملف
 import "./philippines.css"
+import WhatsappIcon from "@/components/WhatsappIcon/WhatsappIcon"
+
 const CountryDetails = ({ params }) => {
   const { id } = params;
 
@@ -16,6 +18,8 @@ const CountryDetails = ({ params }) => {
   return (
     <section style={{ height: "100vh" }} className="section">
       <Header />
+      <WhatsappIcon/>
+
       <div className='flex' style={{ gap: "2rem", flexDirection: "column" }}>
         <div className='bac'>
           <div className='text-bac'>
