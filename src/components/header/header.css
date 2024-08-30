@@ -1,5 +1,6 @@
 header{
   background-color: var(--NavyBlue);
+  z-index: 100;
 }
 .navbur{
   height: 5rem;

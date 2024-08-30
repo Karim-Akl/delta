@@ -103,7 +103,7 @@ const Page = () => {
               style={{
                 flexDirection: "row-reverse",
                 display: "flex",
-                gap: "1rem",
+                gap: "5px",
               }}
             >
 
@@ -115,7 +115,7 @@ const Page = () => {
               style={{
                 flexDirection: "row-reverse",
                 display: "flex",
-                gap: "1rem",
+                gap: "5px",
               }}
             >
               <pre> 

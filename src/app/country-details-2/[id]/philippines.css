@@ -139,3 +139,7 @@ section.section footer {
   /* margin-bottom: 50px; */
   margin-bottom: 0px !important;
   position: static;}
+
+  section.section footer {
+      position: static;
+  }

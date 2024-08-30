@@ -22,9 +22,9 @@ const Header = () => {
           {/* Navigation Links */}
           <nav>
             <ul className="flex">
-              <li><Link href="/">الصفحة الرئيسية</Link></li>
-              <li><Link href="/our-services">خدماتنا</Link></li>
-              <li><Link href="/contact">اتصل بنا</Link></li>
+            <Link href="/"><li>الصفحة الرئيسية</li></Link>
+            <Link href="/our-services"><li> خدماتنا</li></Link>
+            <Link href="contact"><li> اتصل بنا</li></Link>
             </ul>
           </nav>
         </div>
